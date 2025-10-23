@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# LaTeX
+*.aux
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+
+# Apptainer
+*.sif
+*.img
+*.sandbox
+apptainer_cache/
+
+# Results and data
+data/
+results/

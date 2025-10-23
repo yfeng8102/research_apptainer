@@ -1,0 +1,15 @@
+Bootstrap: docker
+From: python:3.12
+
+%post
+    apt-get update && apt-get install -y build-essential
+    pip install --no-cache-dir numpy matplotlib pandas scipy psutil numba
+
+%environment
+    export PATH=/usr/local/bin:$PATH
+    export LC_ALL=C
+
+%runscript
+    echo "Running: python $@"
+    exec python "$@"
+
